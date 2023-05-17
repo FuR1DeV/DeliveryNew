@@ -25,8 +25,8 @@ from settings.config import KEYBOARD, ADMIN_ID
 async def start(message: types.Message, state: FSMContext):
     await state.finish()
     await bot.send_message(message.from_user.id,
-                           f'Приветствуем!'
-                           f'Вы Курьер или Заказчик ? {message.from_user.first_name} ?',
+                           f'<b>Приветствуем!</b>\n\n'
+                           f'<b>Вы Курьер или Заказчик ?</b> <i>{message.from_user.first_name} ?</i>',
                            reply_markup=AdminMarkup.clients_start())
 
 

@@ -5,8 +5,5 @@ class CustomerPhone(StatesGroup):
     phone: State = State()
 
 
-class CustomerStart(StatesGroup):
-    start: State = State()
-    customer_menu: State = State()
-    proposal: State = State()
-    orders: State = State()
+class CustomerCreateOrder(StatesGroup):
+    create_order: State = State()
